@@ -13,4 +13,4 @@ RUN cd /src && make todosvc
 FROM debian:stretch-slim
 WORKDIR /app
 COPY --from=build-env /src/dist/todosvc /usr/bin
-CMD /usr/bin/todosvc
+ENTRYPOINT ["/usr/bin/todosvc"]

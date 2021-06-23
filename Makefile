@@ -6,7 +6,6 @@ todosvc:
 
 docker-image:
 	docker build -t coopernurse/todosvc .
-	docker tag coopernurse/todosvc docker.io/coopernurse/todosvc
 
 docker-push-image:
-	docker push docker.io/coopernurse/todosvc
+	docker push coopernurse/todosvc
